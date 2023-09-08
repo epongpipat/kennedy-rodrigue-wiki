@@ -3,7 +3,7 @@ fMRI Data Processing
 ######
 
 .. note::
-   This documentation is under active development. Last updated: 08/09/2023
+   This documentation is under active development. Last updated: 09/08/2023
 
 .. _fmri_prep:
 
@@ -63,17 +63,32 @@ Each subject's MPRAGE and task images should be copied over from incoming/nii to
 
 fMRI Preprocessing
 -----------------
-For motion correction, we will be using fsl and ASHS (link TBA)
+To apply motion correction for our files, we will be using fsl and ASHS
 
 .. code::
     
-    bash /cvl/kenrod/software/scripts/nxs190061/study-jlbs/fmri/prepro/s01_uber.sh --airc_id <airc_id> --DJ 1 --Nback 1
+    bash /cvl/kenrod/software/scripts/nxs190061/study-jlbs/fmri/prepro/s01_uber.sh --airc_id <airc_id> --DJ <0|1> --Nback <0|1>
+
+To quality check motion correction, follow the following steps:
+
+.. code::
+    
+    bash /cvl/kenrod/software/scripts/nxs190061/study-jlbs/fmri/prepro/s02_uber.sh --airc_id <airc_id>
+    Rscript /cvl/kenrod/software/scripts/nxs190061/study-jlbs/fmri/prepro/s02_qc_motion.R
+
+The QC file is located in ``/cvl/kenrod/study-jlbs/Wave3/MRI/FMRI/data/Motion_QC.csv``
+
+
+Then run the following c:
+
+
 
 For fMRI data processing, there are a few preprocessing steps to make sure that the scans are ready for further analysis. Each preprocessing step has been outlined below, as described in the `SPM12 program features <https://usermanual.wiki/Pdf/manual.87736313/help>`_. These steps include:
 
-* **Coregister: Estimate and Reslice:**
-* **Segmentation:**
-* **Smoothing:**
+* **Coregister: Estimate and Reslice**
+* **Segmentation**
+* **Normalise**
+* **Smoothing**
 
 
 STOP HERE, IM STILL WORKING ON THIS
