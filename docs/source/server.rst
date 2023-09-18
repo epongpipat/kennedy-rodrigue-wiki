@@ -105,7 +105,7 @@ Common SLURM settings:
     #SBATCH --ntasks=1
     #SBATCH --cpus-per-task=1        # can be increased if needed
     #SBATCH --mem=4G                 # can be increased if needed
-    #SBATCH --partition=KRLab
+    #SBATCH --partition=kenrod
     #SBATCH --output=jid-%A-%a_jname-%x.log
     #SBATCH --mail-type=FAIL
     #SBATCH --time=2-00:00:00        # day-hours:minutes:seconds format
