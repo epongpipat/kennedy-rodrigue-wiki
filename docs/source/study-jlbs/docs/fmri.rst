@@ -90,5 +90,16 @@ For fMRI data processing, there are a few preprocessing steps to make sure that 
 * **Normalise**
 * **Smoothing**
 
+First, we gunzip the nii.gz files so that MATLAB/SPM can read the files. Run the following:
+
+.. code::
+    
+    bash /cvl/kenrod/software/scripts/nxs190061/study-jlbs/fmri/prepro/gunzip.sh
+
+Then run the following script to preprocess fmri data with SPM12 using SLURM:
+
+    bash /cvl/kenrod/software/scripts/nxs190061/study-jlbs/fmri/prepro/s03_uber.sh --airc_id <airc_id>
+
+The smoothed, normalized, and registered fmri files are located in ``/cvl/kenrod/study-jlbs/Wave3/MRI/FMRI/data/<airc_id>/<DJ|Nback>_spm12batch``
 
 STOP HERE, IM STILL WORKING ON THIS
