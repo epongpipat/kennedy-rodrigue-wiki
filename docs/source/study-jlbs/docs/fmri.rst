@@ -29,7 +29,7 @@ If the subject’s fMRI behavioral files have not yet been copied to our server,
 
 .. note::
     The fMRI files in behavioral directory must not contain duplicates or bad runs. Each task should have 3 runs.
-    As of 08/09/2023, there are a total of 65 participants with functional data, with 63 DJs and 60 n-backs
+    As of 08/09/2023, there are a total of 65 participants with functional data, with 63 DJs, 60 n-backs, and 58 with both DJ and n-back
 
 .. _convert_for_SPM:
 
