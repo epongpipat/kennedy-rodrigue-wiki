@@ -155,4 +155,23 @@ Command Example:
 
     qsub /path/to/script.sh --airc_id 3tb1111 --sub 0001 --date 20230101 --ses 3
 
+.. _flex_uber:
 
+Flex Uber
+--------
+
+Ekarin's Magnus Opus, TBA, subject to change
+
+.. code:: bash
+
+    flex_uber
+
+.. code:: bash
+
+    /cvl/kenrod/software/scripts/eep170030/scripts.txt
+
+For example:
+
+.. code:: bash
+
+    ${root_dir}/software/scripts/nxs190061/study-jlbs/fmri/prepro/scripts.txt
