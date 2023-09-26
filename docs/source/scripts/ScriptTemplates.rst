@@ -132,3 +132,6 @@ To run this script:
 
       :%s/\r$//
       :x
+
+   If you are trying to test your script that calls from a .csv file but the output looks like it's being cut off or being flipped, the .csv is possibly saved in Windows-style format.
+   Quick fix is to open up the csv file via Visual Studio Code (or other code editors), hover to the bottom right of the application, change CRLF to LF, and save the csv file.
