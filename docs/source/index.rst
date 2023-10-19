@@ -13,3 +13,4 @@ Welcome to Kennedy-Rodrigue Lab documentation!
    study-jlbs/index
    study-pams/index
    scripts/ScriptTemplates.rst
+   containers/index
