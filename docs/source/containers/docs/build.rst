@@ -15,7 +15,7 @@ Option #1
     export SINGULARITY_CACHEDIR="${root_dir}/software/singularity_images/cache"
     cmd="singularity build \
     ${root_dir}/software/singularity_images/${software}-${ver}.simg \
-    docker://anagrammarian/${software}:${ver}"
+    docker://${group}/${software}:${ver}"
     echo -e "\ncommand:\n${cmd}\n"
     eval ${cmd}
 
