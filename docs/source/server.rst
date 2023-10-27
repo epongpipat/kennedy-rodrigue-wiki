@@ -175,3 +175,13 @@ For example:
 .. code:: bash
 
     ${root_dir}/software/scripts/nxs190061/study-jlbs/fmri/prepro/scripts.txt
+
+Technical Information
+------
+
+.. csv-table:: 
+   :header: "hostname", "cores", "memory"
+
+    "cvlkrcompute1", 32, "132GB"
+    "cvlkrcompute2", 32, "132GB"
+    "cortex", 12, "65GB"
