@@ -176,6 +176,8 @@ For example:
 
     ${root_dir}/software/scripts/nxs190061/study-jlbs/fmri/prepro/scripts.txt
 
+.. _tech_info:
+
 Technical Information
 ------
 
