@@ -8,7 +8,7 @@ Load the following modules:
    .. code:: bash
 
       module use /cvl/kenrod/server/modulefiles
-      module load convert-mri_study-pams/0.1.0
+      module load study-pams_convert-mri/0.1.0
 
 For more details or updates, check the `github page. <https://github.com/epongpipat/convert-mri_study-pams>`_
 
