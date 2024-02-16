@@ -14,14 +14,15 @@ Preprocessing
 
    .. code:: bash
 
-      root_dir='/raid/data'
-      code_dir="${root_dir}/shared/software/scripts/mri/preprocess"
+      module load bashHelperKennedyRodrigue
+      root_dir='get_root_dir kenrod'
+      code_dir="${root_dir}/software/scripts/eep170030/study-jlbs/mri/anat/T1w"
 
 #. Convert freesurfer ROIs from surfaces to volumes
 
    .. code:: bash
 
-      bash ${code_dir}/s01_freesurfer_roi_from_surface_to_volume.sh
+      bash ${code_dir}/s01_freesurfer_roi_from_surface_to_volume_faster.sh
 
    
    ROIs:
@@ -36,7 +37,7 @@ Preprocessing
 
    .. code:: bash
 
-      bash ${code_dir}/s02_warp_freesurfer_roi_to_T1w_native.sh
+      bash ${code_dir}/s02_warp_freesurfer_roi_from-fsnative_to-T1w-native.sh
 
 #. Preprocess T1w
 
