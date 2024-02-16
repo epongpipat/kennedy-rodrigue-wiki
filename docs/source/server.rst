@@ -160,21 +160,22 @@ Command Example:
 Flex Uber
 --------
 
-Ekarin's Magnus Opus, TBA, subject to change
+.. note::
+
+    Please make sure to read the options carefully as they are likely to change.
+
+If scripts are created using the script template, consider making use of the :code:`flex_uber` function.
+
+1. Create a pipeline script set text file. See :code:`${root_dir}/software/scripts/nxs190061/study-jlbs/fmri/prepro/scripts.txt` for an example.
+
+2. Add that pipeline script set text file to :code:`/cvl/kenrod/software/scripts/eep170030/scripts.txt`
+
+3. Execute
 
 .. code:: bash
 
+    module load bashHelperKennedyRodrigue
     flex_uber
-
-.. code:: bash
-
-    /cvl/kenrod/software/scripts/eep170030/scripts.txt
-
-For example:
-
-.. code:: bash
-
-    ${root_dir}/software/scripts/nxs190061/study-jlbs/fmri/prepro/scripts.txt
 
 .. _tech_info:
 
