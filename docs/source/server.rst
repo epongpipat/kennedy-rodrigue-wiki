@@ -179,6 +179,35 @@ If scripts are created using the script template, consider making use of the :co
 
 .. _tech_info:
 
+Profiles
+------
+
+Consider adding these global lab profiles to your user profile. You can copy and paste either into its respective profile file by using the :code:`nano` function (e.g., :code:`nano ~/.bash_profile`)
+
+1. :code:`~/.bash_profile`
+
+.. code:: bash
+
+    if [[ ${HOSTNAME} =~ 'cvlkrcompute' ]]; then
+      export root_dir='/cvl/kenrod'
+    else
+      export root_dir='/mfs/cvl/groups/kenrod'
+    fi
+    source ${root_dir}/server/profiles/global/bash_profile.sh
+
+2. :code:`~/.Rprofile`
+
+.. code:: R
+
+    if (Sys.info()[['nodename']] == 'cvlkrcompute1.utdallas.edu' | Sys.info()[['nodename']] == 'cvlkrcompute2.utdallas.edu') {
+            root_dir <- '/cvl/kenrod'
+    } else {
+            root_dir <- '/mfs/cvl/groups/kenrod'
+    }
+    source(sprintf('%s/server/profiles/global/r_profile.R', root_dir))
+
+
+
 Technical Information
 ------
 
