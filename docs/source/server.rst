@@ -18,14 +18,14 @@ For Mac users, go to ``Finder`` > ``Go`` > ``Connect to Server``, enter the foll
 
 .. code::
 
-    smb://smb.cvl.utdallas.edu/kenrod
+    smb://smb.cvl.utdallas.edu/groups/kenrod
 
 
 For Windows users, follow the instructions `here <https://atlas.utdallas.edu/TDClient/30/Portal/KB/ArticleDet?ID=51>`_ and enter the following for ``Folder`` field:
 
 .. code::
 
-    \\smb.cvl.utdallas.edu\kenrod
+    \\smb.cvl.utdallas.edu\groups/kenrod
 
 .. _login:
 
