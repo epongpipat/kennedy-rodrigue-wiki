@@ -59,8 +59,8 @@ Parallel Script Template
     parse_args "$@"
     req_arg_list=(airc_id sub date ses)
     check_req_args ${req_arg_list[@]}
-
     print_header
+    set -e
 
     # ------------------------------------------------------------------------------
     # paths
@@ -73,6 +73,7 @@ Parallel Script Template
     
     declare -A out_paths
     out_paths[nii_dir]="${root_dir}/to/the/output/directory"
+    out_paths[test]="${root_dir}/to/the/output/file"
 
     # ------------------------------------------------------------------------------
     # check paths
@@ -89,12 +90,12 @@ Parallel Script Template
     # ------------------------------------------------------------------------------
     # main
     # ------------------------------------------------------------------------------
-    #main code here
+    cmd="<insert command here>"
+    eval_cmd -c "${cmd}" -o ${out_paths[test]} --overwrite ${overwrite} --print ${print}
 
     # ------------------------------------------------------------------------------
     # end
     # ------------------------------------------------------------------------------
-    ensure_permissions ${out_paths[nii_dir]}
     print_footer
 
 Command Example
