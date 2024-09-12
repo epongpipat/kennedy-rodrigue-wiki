@@ -4,7 +4,7 @@
 Scripts
 #################################################
 
-Information about containers such as how to build and run them
+Information about scripts
 
 .. toctree::
    :maxdepth: 1
