@@ -1,19 +1,21 @@
 ######
-Script Templates
+Coding
 ######
 
+
+
 .. note::
-   This documentation is under active development. Last updated: 08/29/2023
+   This documentation is under active development. Last updated: 2024-09-12
 
 .. contents:: Table of Contents
    :depth: 2
    :local:
    :backlinks: none
 
-.. _parallel_script:
+.. _script_template:
 
-Parallel Script Template
------------------
+bash Script Template
+======
 
 .. code:: bash
 
@@ -44,7 +46,7 @@ Parallel Script Template
     #$ -S /bin/bash
     #$ -o jid-$JOB_ID-$TASK_ID_jname-$JOB_NAME.log      
     #$ -j y
-    #$ -m a \
+    #$ -m a
     #$ -M ${USER}@utdallas.edu                          
 
     # ------------------------------------------------------------------------------
@@ -57,8 +59,8 @@ Parallel Script Template
     # args/hdr
     # ------------------------------------------------------------------------------
     parse_args "$@"
-    req_arg_list=(airc_id sub date ses)
-    check_req_args ${req_arg_list[@]}
+    req_args=(airc_id sub date ses)
+    check_req_args ${req_args[@]}
     print_header
     set -e
 
@@ -112,27 +114,32 @@ To run this script:
     module load sge
     qsub /path/to/script/script.sh --airc_id 3tb1111 --sub 0001 --date 20230101 --ses 3
 
-.. note::
-   If you are getting the following error:
+Common Issues
+=====
 
-   .. code:: bash
+1. End of line sequence for file is CRLF (Windows) rather than LF (Unix)
++++++
 
-      line 1: $':\r': command not found
-      line 5: syntax error near unexpected token `$'\r''
+If you are getting the following error:
 
-   Then that means you have Windows-style line endings (occassionally caused by copy-pasting code from browsers).
-   To fix, go to terminal and type the following:
-   
-   .. code:: bash
+.. code:: bash
 
-      vi -b /path/to/file
+   line 1: $':\r': command not found
+   line 5: syntax error near unexpected token `$'\r''
 
-   In ``vi``, type:
+Then that means you have Windows-style line endings (occassionally caused by copy-pasting code from browsers).
+To fix, go to terminal and type the following:
 
-   .. code:: bash
+.. code:: bash
 
-      :%s/\r$//
-      :x
+   vi -b /path/to/file
 
-   If you are trying to test your script that calls from a .csv file but the output looks like it's being cut off or being flipped, the .csv is possibly saved in Windows-style format.
-   Quick fix is to open up the csv file via Visual Studio Code (or other code editors), hover to the bottom right of the application, change CRLF to LF, and save the csv file.
+In ``vi``, type:
+
+.. code:: bash
+
+   :%s/\r$//
+   :x
+
+If you are trying to test your script that calls from a .csv file but the output looks like it's being cut off or being flipped, the .csv is possibly saved in Windows-style format.
+Quick fix is to open up the csv file via Visual Studio Code (or other code editors), hover to the bottom right of the application, change CRLF to LF, and save the csv file.
