@@ -12,5 +12,5 @@ Welcome to Kennedy-Rodrigue Lab documentation!
    admin/index
    study-jlbs/index
    study-pams/index
-   scripts/ScriptTemplates.rst
+   scripts/index
    containers/index
