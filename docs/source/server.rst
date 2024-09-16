@@ -45,7 +45,6 @@ You can login by typing the following:
 User is your UTD Net ID and hostname can be one of the following:
 
 * ``cvlkrcompute1.utdallas.edu`` or ``ponyo.utdallas.edu``
-* ``cvlkrcompute2.utdallas.edu`` or ``totoro.utdallas.edu``
 * ``cortex.cvl.utdallas.edu``
 
 .. _software:
@@ -83,7 +82,7 @@ To run parallel jobs, we can use `SLURM (preferred) <https://slurm.schedmd.com/q
 SLURM
 +++++++
 
-To use ``SLURM``, first access the server via ``cvlkrcompute2.utdallas.edu`` (or ``totoro.utdallas.edu``) or via ``cortex.cvl.utdallas.edu``.
+To use ``SLURM``, first access the server via ``cortex.cvl.utdallas.edu``.
 
 Basic SLURM commands:
 
@@ -106,7 +105,7 @@ Common SLURM settings:
     #SBATCH --cpus-per-task=1        # can be increased if needed
     #SBATCH --mem=4G                 # can be increased if needed
     #SBATCH --partition=kenrod
-    #SBATCH --output=jid-%A-%a_jname-%x.log
+    #SBATCH --output=jid-%A_jname-%x.log
     #SBATCH --mail-type=FAIL
     #SBATCH --time=2-00:00:00        # day-hours:minutes:seconds format
     #SBATCH --export=NONE            # ALL or comma-separated environment variables
@@ -199,7 +198,7 @@ Consider adding these global lab profiles to your user profile. You can copy and
 
 .. code:: R
 
-    if (Sys.info()[['nodename']] == 'cvlkrcompute1.utdallas.edu' | Sys.info()[['nodename']] == 'cvlkrcompute2.utdallas.edu') {
+    if (Sys.info()[['nodename']] == 'cvlkrcompute1.utdallas.edu') {
             root_dir <- '/cvl/kenrod'
     } else {
             root_dir <- '/mfs/cvl/groups/kenrod'
@@ -212,8 +211,8 @@ Technical Information
 ------
 
 .. csv-table:: 
-   :header: "hostname", "cores", "memory"
+   :header: "hostname", "alias", "cores", "memory", "cortex node"
 
-    "cvlkrcompute1", 32, "132GB"
-    "cvlkrcompute2", 32, "132GB"
-    "cortex", 12, "65GB"
+    "cvlkrcompute1", "ponyo", 32, "132GB", ""
+    "cvlkrcompute2", "totoro", 32, "132GB", "compute-16"
+    "cvlkrcompute3", "kiki", 12, "65GB", "compute-02"
