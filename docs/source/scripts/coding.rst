@@ -114,6 +114,13 @@ To run this script:
     module load sge
     qsub /path/to/script/script.sh --airc_id 3tb1111 --sub 0001 --date 20230101 --ses 3
 
+.. _flex_uber:
+
+Flex Uber
++++++
+
+If scripts are created using the script template, consider making use of the `flex_uber <https://github.com/epongpipat/bashHelperKennedyRodrigue/wiki/flex_uber>`_ or `flex_wrapper <https://github.com/epongpipat/bashHelperKennedyRodrigue/wiki/flex_wrapper>`_ functions.
+
 Common Issues
 =====
 
