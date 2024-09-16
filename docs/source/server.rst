@@ -154,27 +154,26 @@ Command Example:
 
     qsub /path/to/script.sh --airc_id 3tb1111 --sub 0001 --date 20230101 --ses 3
 
-.. _flex_uber:
+.. _ood:
 
-Flex Uber
---------
+Open OnDemand (OOD)
+-----
 
-.. note::
+Open OnDemand allows users to access terminal via a web browser or use programs that require GUI interfaces (e.g., `SPM`, `freeview`, or `fslview`).
 
-    Please make sure to read the options carefully as they are likely to change.
 
-If scripts are created using the script template, consider making use of the :code:`flex_uber` function.
+Login using the link below using your UTD credentials.
 
-1. Create a pipeline script set text file. See :code:`${root_dir}/software/scripts/nxs190061/study-jlbs/fmri/prepro/scripts.txt` for an example.
+https://ood.cvl.utdallas.edu/
 
-2. Add that pipeline script set text file to :code:`/cvl/kenrod/software/scripts/eep170030/scripts.txt`
+To use terminal:
 
-3. Execute
+``Clusters`` > ``>_cortex Shell Access``
 
-.. code:: bash
+To use programs that require GUI interface:
 
-    module load bashHelperKennedyRodrigue
-    flex_uber
+``My Interactive Sessions`` > ``cortex Desktop`` > adjust settings as needed and click ``Launch``
+
 
 .. _tech_info:
 
