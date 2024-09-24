@@ -12,3 +12,4 @@ Contains the documentation related to PAMS
    docs/conversion
    docs/T1w
    docs/fmri
+   docs/pet
