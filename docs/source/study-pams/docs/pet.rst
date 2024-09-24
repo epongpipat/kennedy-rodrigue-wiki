@@ -1,9 +1,9 @@
 .. _pet:
 
-PET Amyloid
+pet
 =====
 
-Pipeline Description
+Amyloid Pipeline Description
 -----
 
 #. Ensure processed T1w (post-freesurfer processing)
