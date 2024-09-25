@@ -1,12 +1,13 @@
 .. _mri:
 
 mri
-====
+####
 
 T1w
-----
+****
 
 T1w Pipeline Description
+========================
 
 #. Freesurfer processing
 
