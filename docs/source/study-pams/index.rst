@@ -10,6 +10,7 @@ Contains the documentation related to PAMS
    :maxdepth: 1
 
    docs/conversion
+   docs/mri
    docs/T1w
    docs/fmri
    docs/pet
