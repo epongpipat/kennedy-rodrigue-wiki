@@ -116,6 +116,24 @@ Command Example:
 
     sbatch /path/to/script.sh
 
+Testing and Debugging:
+
+Please use either the ``dev`` or ``kenrod`` partition such as the following commands (adjust parameters as needed):
+
+``dev`` partition (preferred)
+
+.. code:: bash
+
+    srun --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=4G --partition=dev --pty /bin/bash
+
+``kenrod`` partition
+
+.. code:: bash
+
+    srun --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=4G --partition=kenrod --pty /bin/bash
+
+Once inside the partition, you can run your script as it is normally executed (e.g., ``bash /path/to/script.sh``)
+
 Sun Grid Engine
 +++++++
 
