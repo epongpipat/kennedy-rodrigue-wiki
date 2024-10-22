@@ -116,24 +116,6 @@ Command Example:
 
     sbatch /path/to/script.sh
 
-Testing and Debugging:
-
-Please use either the ``dev`` or ``kenrod`` partition such as the following commands (adjust parameters as needed):
-
-``dev`` partition (preferred)
-
-.. code:: bash
-
-    srun --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=4G --partition=dev --pty /bin/bash
-
-``kenrod`` partition
-
-.. code:: bash
-
-    srun --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=4G --partition=kenrod --pty /bin/bash
-
-Once inside the partition, you can run your script as it is normally executed (e.g., ``bash /path/to/script.sh``)
-
 Sun Grid Engine
 +++++++
 
@@ -171,6 +153,27 @@ Command Example:
 .. code:: bash
 
     qsub /path/to/script.sh --airc_id 3tb1111 --sub 0001 --date 20230101 --ses 3
+
+Testing and Debugging
+-----
+
+On cortex, please use either the ``dev`` or ``kenrod`` partition such as the following commands (adjust parameters as needed; do not run jobs on the login node because this will slow down the server for everyone and, at worse, could crash the server!):
+
+``dev`` partition (preferred)
+
+.. code:: bash
+
+    srun --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=4G --partition=dev --pty /bin/bash
+
+``kenrod`` partition
+
+.. code:: bash
+
+    srun --nodes=1 --ntasks=1 --cpus-per-task=1 --mem=4G --partition=kenrod --pty /bin/bash
+
+Once inside the partition, you can run your script as it is normally executed (e.g., ``bash /path/to/script.sh``)
+
+On ponyo, testing and debugging can be performed by running the script as it is normally executed.
 
 .. _ood:
 
