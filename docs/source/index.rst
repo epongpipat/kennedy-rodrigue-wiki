@@ -10,7 +10,7 @@ Welcome to Kennedy-Rodrigue Lab documentation!
 
    server
    admin/index
-   study-jlbs/index
+   study-dallas/index
    study-pams/index
    scripts/index
    containers/index
