@@ -25,7 +25,7 @@ For Windows users, follow the instructions `here <https://atlas.utdallas.edu/TDC
 
 .. code::
 
-    \\smb.cvl.utdallas.edu\groups/kenrod
+    \\smb.cvl.utdallas.edu\groups\kenrod
 
 .. _login:
 
