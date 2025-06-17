@@ -8,11 +8,16 @@ Option #1
 
 .. code:: bash
 
+    # opts -----
     group="freesurfer"
     software="freesurfer"
     ver="7.1.1"
+
+    # paths -----
     export SINGULARITY_TMPDIR="${root_dir}/software/singularity_images/tmp"
     export SINGULARITY_CACHEDIR="${root_dir}/software/singularity_images/cache"
+
+    # main -----
     cmd="singularity build \
     ${root_dir}/software/singularity_images/${software}-${ver}.simg \
     docker://${group}/${software}:${ver}"
@@ -27,10 +32,15 @@ If the first option doesn't work, try running this locally. Assuming that you ha
 
 .. code:: bash
 
+    # opts -----
     group="freesurfer"
     software="freesurfer"
     ver="7.1.1"
+
+    # paths -----
     out_dir="${root_dir}/software/singularity_images"
+
+    # main -----
     cmd="docker run \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v ${out_dir}:/output \
