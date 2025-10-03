@@ -77,17 +77,11 @@ QC Parameters
    
    .. code:: bash
 
-      qc_combine_all.sub.sh
+      qc_combine_all_sub.sh
 
 #. Then run the following script locally (via RStudio)
 
    .. code:: bash
 
       #use render in RStudio
-      qc_report.qmd
-   
-#. Last, copy the QC report file to the study-pams directory
-
-   .. code:: bash
-
-      qc_copy_report.sh
+      qc_report.qmd --study pams --overwrite 1
