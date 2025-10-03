@@ -84,4 +84,4 @@ QC Parameters
    .. code:: bash
 
       #use render in RStudio
-      qc_report.qmd --study pams --overwrite 1
+      qc_render.sh --study pams --overwrite 1
