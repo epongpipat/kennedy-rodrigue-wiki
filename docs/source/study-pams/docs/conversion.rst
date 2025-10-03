@@ -23,20 +23,20 @@ Data Entry
 
    .. code:: bash
    
-      /cvl/kenrod/study-pams/Demographic_and_Task_Data/Cognitive_Data_MCI.xlsx
+      ${root_dir}/study-pams/Demographic_and_Task_Data/Cognitive_Data_MCI.xlsx
 
 #. Copy physiological measures to the server and rename the files using the following template:
 
    .. code:: bash
    
-      /cvl/kenrod/study-pams/sourcedata/physio/KENROD_PAMS_20230101_0001_1/sub-0001_ses-01.puls
-      /cvl/kenrod/study-pams/sourcedata/physio/KENROD_PAMS_20230101_0001_1/sub-0001_ses-01.resp
+      ${root_dir}/study-pams/sourcedata/physio/KENROD_PAMS_20230101_0001_1/sub-0001_ses-01.puls
+      ${root_dir}/study-pams/sourcedata/physio/KENROD_PAMS_20230101_0001_1/sub-0001_ses-01.resp
 
 #. Copy the exam card to the server using the following template:
 
    .. code:: bash
    
-      /cvl/kenrod/study-pams/sourcedata/exam_cards/KENROD_PAMS_20230101_0001_1.pdf
+      ${root_dir}/study-pams/sourcedata/exam_cards/KENROD_PAMS_20230101_0001_1.pdf
 
 .. _convert:
 
