@@ -10,7 +10,7 @@ Load the following modules:
       module use /cvl/kenrod/server/modulefiles
       module load bashHelperKennedyRodrigue
       module load containers/r/4.2.1-quarto
-      module load study-pams_convert-mri
+      module load study-pams/convert_mri/latest
 
 For more details or updates, check the `github page. <https://github.com/epongpipat/convert-mri_study-pams>`_
 
