@@ -7,7 +7,7 @@ Load the following modules:
 
    .. code:: bash
 
-      module use /cvl/kenrod/server/modulefiles
+      module use ${root_dir}/server/modulefiles
       module load bashHelperKennedyRodrigue
       module load containers/r/4.2.1-quarto
       module load study-pams/convert_mri/latest
@@ -83,5 +83,4 @@ QC Parameters
 
    .. code:: bash
 
-      #use render in RStudio
       qc_render.sh --study pams --overwrite 1
