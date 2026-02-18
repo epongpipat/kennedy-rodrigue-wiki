@@ -10,5 +10,6 @@ fMRI Pipeline Description
 
 #. Ensure functional data (including local) are copied over
 
-To run this pipeline, please use ``flex_uber`` and use the ``study-pams/mri/func/task-circles_bold/preprocessing/scripts.txt`` pipeline
+To run this pipeline, please use ``flex_uber`` and use the ``study-pams/mri/func/task-circles_bold/preprocessing/scripts.txt`` pipeline.
+
 Then, use ``flex_uber`` and use the ``study-pams/mri/func/task-circles_bold/first-level/scripts.txt`` pipeline
