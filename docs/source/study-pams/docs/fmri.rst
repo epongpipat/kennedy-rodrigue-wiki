@@ -10,7 +10,7 @@ fMRI Pipeline Description
 
 #. Ensure functional data (including local) are copied over
 
-#. Ensure you use ``module load python/3.9.1" or the latest version
+#. Ensure you use ``module load python/3.9.1`` or the latest version
 
 To run this pipeline, please use ``flex_uber`` and use the ``study-pams/mri/func/task-circles_bold/preprocessing/scripts.txt`` pipeline.
 
