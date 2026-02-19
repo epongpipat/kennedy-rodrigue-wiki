@@ -1,10 +1,10 @@
-.. _fmri:
+.. _fmri_pams:
 
 fMRI processing
-#####
+###############
 
 fMRI Pipeline Description
-*****
+*************************
 
 #. Ensure processed T1w (post-freesurfer processing)
 
