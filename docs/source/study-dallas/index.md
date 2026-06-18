@@ -8,6 +8,5 @@
 :maxdepth: 1
 
 conversion
-T1w
-fmri
+mri
 ```

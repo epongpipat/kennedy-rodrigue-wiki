@@ -1,6 +1,6 @@
 (fmri-pams)=
 
-# fMRI processing
+# bold
 
 ## fMRI Pipeline Description
 

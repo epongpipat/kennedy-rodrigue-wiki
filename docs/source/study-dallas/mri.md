@@ -1,5 +1,4 @@
-(mri)=
-
+(study-dallas-mri)=
 # mri
 
 ```{toctree}

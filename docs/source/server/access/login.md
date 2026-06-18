@@ -2,27 +2,12 @@
 
 # Login with Command Line Interface ({{CLI}})
 
-::::{grid} 1 2 2 2
-:gutter: 3
-
-:::{grid-item-card} Server: cortex (Recommended)
-:shadow: sm
-HPC Cluster
-**Hostname:** `cortex.cvl.utdallas.edu`
-:::
-
-:::{grid-item-card} Server: ponyo (Legacy)
-:shadow: sm
-Standalone Server
-**Hostname:** `cvlkrcompute1.utdallas.edu`
-**Alias Hostname:** `ponyo.utdallas.edu`
-:::
-::::
-
 ::::::{tab-set}
 
 :::::{tab-item} macOS
-1. Run the `ssh` command in your terminal (replacing `<user>` with your {{UTD}} NetID and `<hostname>` with one of the server hostnames listed above) and press `Enter`:
+:sync: macOS
+
+1. Run the `ssh` command in your terminal (replacing `<user>` with your {{UTD}} NetID and `<hostname>` with one of the server hostnames listed below) and press `Enter`:
    ```bash
    ssh -Y <user>@<hostname>
    ```
@@ -35,13 +20,15 @@ Mac users can configure passwordless login and SSH client aliases to log in by s
 :::::
 
 :::::{tab-item} Windows
+:sync: Windows
+
 ::::{tab-set}
 
 :::{tab-item} MobaXterm (Recommended)
 1. Download and install [MobaXterm Home Edition](https://mobaxterm.mobatek.net/download-home-edition.html).
 2. Launch MobaXterm and click on **Session** in the top-left toolbar.
 3. Select **SSH** from the session types to configure the connection:
-   - **Remote host**: Enter one of the hostnames listed above (e.g., `cortex.cvl.utdallas.edu`).
+   - **Remote host**: Enter one of the hostnames listed below (e.g., `cortex.cvl.utdallas.edu`).
    - **Specify username**: Check the box and enter your {{UTD}} NetID.
    - **Port**: Leave it as `22`.
 4. Click **OK**. A terminal prompt will appear asking for your {{UTD}} password; enter it and press `Enter`.
@@ -62,3 +49,25 @@ Mac users can configure passwordless login and SSH client aliases to log in by s
 :::::
 
 ::::::
+
+::::{grid} 1 2 2 2
+:gutter: 3
+
+:::{grid-item-card} Server: cortex (Recommended)
+:shadow: sm
+
+HPC Cluster
+
+**Hostname:** `cortex.cvl.utdallas.edu`
+:::
+
+:::{grid-item-card} Server: ponyo (Legacy)
+:shadow: sm
+
+Standalone Server
+
+**Hostname:** `cvlkrcompute1.utdallas.edu`
+
+**Alias Hostname:** `ponyo.utdallas.edu`
+:::
+::::

@@ -1,4 +1,4 @@
-# fMRI Data Processing
+# bold
 
 :::{note}
 This documentation is under active development. Last updated: 09/08/2023

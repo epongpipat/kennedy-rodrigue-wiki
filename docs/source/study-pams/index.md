@@ -9,6 +9,5 @@
 
 conversion
 mri
-fmri
 pet
 ```

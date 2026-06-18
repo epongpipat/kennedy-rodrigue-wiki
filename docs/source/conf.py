@@ -15,6 +15,7 @@ extensions = [
     'myst_parser',
     'sphinx_design',
     'sphinx_new_tab_link',
+    'sphinx_copybutton',
     'sphinx_rtd_theme',
     'sphinx.ext.duration',
     'sphinx.ext.doctest',

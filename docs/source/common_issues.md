@@ -65,5 +65,3 @@ If you are testing scripts that read from a `.csv` file and find the terminal ou
 1. Open the file in Visual Studio Code.
 2. Look at the bottom-right status bar, click on **CRLF**, and change it to **LF**.
 3. Save the file.
-
-
