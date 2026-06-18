@@ -1,1 +1,6 @@
 sphinx-rtd-theme
+myst-parser
+sphinx-design
+sphinx-new-tab-link
+
+

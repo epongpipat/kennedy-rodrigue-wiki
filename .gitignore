@@ -160,3 +160,4 @@ docs/source/.DS_Store
 .*
 !.gitignore
 !.readthedocs.yml
+kenrod_wiki.code-workspace
